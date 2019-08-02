@@ -45,7 +45,7 @@
 %>
 
 
-<audio src="static/music/happy.m4a" autoplay="autoplay" loop=""></audio>
+<audio id="audios" src="static/music/happy.m4a" autoplay="autoplay" loop=""></audio>
 <div id="mainDiv">
     <div id="content">
         <div id="code">
@@ -64,7 +64,7 @@
                     <!-- <div id="elapseClock"></div> -->
                 </div>
                 <div id="loveu">
-                    Love u forever and ever.<br/>
+                    Like u forever and ever.<br/>
                     <!-- <div class="signature">- 大神</div> -->
                 </div>
             </div>
@@ -104,6 +104,15 @@
         adjustCodePosition();
         $("#code").typewriter();
     }
+
+
+    // 将以下代码添加到js入口函数内即可
+    document.addEventListener('touchstart', function() {
+        document.getElementById('audios').play()
+    })
+
+
+
 </script>
 
 </body>

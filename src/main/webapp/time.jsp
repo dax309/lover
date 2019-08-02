@@ -364,11 +364,9 @@
 </style>
 </head>
 <body>
+<audio id="audios" src="static/music/love.mp3" autoplay="autoplay" loop=""></audio>
 <div class="changer">
     <div class="sub">
-        <div style="text-align: center">
-            <audio src="static/music/love.mp3"  controls="controls" loop="loop" preload="auto" ></audio>
-        </div>
     </div>
     <h1>还有</h1>
     <div class="demos"><a data-go="1"><span id="c1"></span></a><a data-go="2"><span id="c2"></span></a><a data-go="3"><span id="c3"></span></a></div>
@@ -512,6 +510,12 @@
     }
     getDate();
     setInterval(getDate, 1000);
+
+
+    // 将以下代码添加到js入口函数内即可
+    document.addEventListener('touchstart', function() {
+        document.getElementById('audios').play()
+    })
 </script>
 
 </body>
