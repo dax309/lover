@@ -20,7 +20,7 @@
     <style type="text/css">
         @font-face {
             font-family: digit;
-            src: url('digital-7_mono.ttf') format("truetype");
+            src: url('/static/digital-7_mono.ttf') format("truetype");
         }
     </style>
 
@@ -45,7 +45,7 @@
 %>
 
 
-<audio id="audios" src="static/music/happy.m4a" autoplay="autoplay" loop=""></audio>
+<audio id="audios" src="static/music/loveyou.mp3" autoplay="autoplay" loop=""></audio>
 <div id="mainDiv">
     <div id="content">
         <div id="code">
@@ -53,8 +53,12 @@
 				<span class="space"/><br />
 				<span class="space"/><br />
 				<span class="space"/><br />
-				<span style="font-size: 50px" class="space"/>生日快乐！<br /></span> <br />
-            <br />
+				<span style="font-size: 50px" class="space"/>生日快乐呀！<br /></span>
+            <span class="space"/><br />
+            <span class="space"/><br />
+                <span class="space"/>此处省略一万字<br />
+
+
         </div>
         <div id="loveHeart">
             <canvas id="garden"></canvas>
@@ -65,7 +69,7 @@
                 </div>
                 <div id="loveu">
                     Like u forever and ever.<br/>
-                    <!-- <div class="signature">- 大神</div> -->
+                    <div class="signature">- 哆啦A梦</div>
                 </div>
             </div>
         </div>
